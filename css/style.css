@@ -1043,7 +1043,8 @@ section {
     padding: 0 1.5rem;
   }
   .admission__list {
-    grid-template-columns: 1fr;
+    display: flex;
+    flex-direction: column;
     gap: 2rem;
   }
   .admission__item {
@@ -1052,14 +1053,17 @@ section {
     gap: 1rem;
   }
   .admission__item-link {
-    height: 21rem;
     width: 100%;
-    max-width: 400px;
+    max-width: 30.063rem;
+    height: auto;
   }
-  .admission__item-link img {
-    height: 21rem;
+  .admission__item-link img, .admission__item-link-img1 {
     width: 100%;
-    max-width: 400px;
+    height: auto;
+    max-width: 100%;
+    object-fit: cover;
+    border-radius: 1.7rem;
+    display: block;
   }
 }
 @media (max-width: 560px) {
