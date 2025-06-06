@@ -87,7 +87,7 @@
   .program {
     padding: 1rem 0;
     &__container {
-      padding: 0 1rem;
+      padding: 0;
 
       &-img {
         display: grid;
@@ -106,7 +106,7 @@
         > *:last-child {
           grid-column: 1 / span 2;
           justify-self: center;
-          max-width: 20rem;
+          max-width: 13rem;
           width: 100%;
         }
 

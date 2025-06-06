@@ -61,8 +61,18 @@
 }
 
 
-@media (max-width:560px) {
+@media (max-width: 560px) {
   .admission {
     padding: 0;
+
+    &__container {
+
+      padding: 0;
+      gap: 1rem;
+    }
+
+    &__list {
+      gap: 1rem;
+    }
   }
 }

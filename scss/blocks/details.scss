@@ -34,7 +34,7 @@
 
 @media (max-width: 960px) {
   .details {
-    padding: 2rem 0;
+    padding: 1rem 0;
 
     &-wrap {
       background-size: contain;
@@ -55,13 +55,22 @@
   }
 }
 
-@media(max-width:560px) {
+@media(max-width: 560px) {
   .details {
-    padding: 0;
+    padding: 2rem 0 0.5rem 0;
 
     &-wrap {
+      background: url(../assets/img/about-program-mobile.png) no-repeat;
       background-size: contain;
-      background-position: bottom right 6vw;
+      background-position: bottom right 2.5vw;
+
     }
+
+    
+    &__container {
+      padding: 2rem 1.5rem;
+      gap: 1.2rem;
+      max-width: 60vw;
   }
+}
 }

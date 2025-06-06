@@ -105,7 +105,7 @@
     justify-content: center;
 
     &__container {
-      padding: 0 1rem;
+      padding: 0;
       gap: 1.2rem;
 
       h2 {
@@ -117,13 +117,13 @@
     &__list {
       display: grid;
       grid-template-columns: repeat(2, 1fr);
-      gap: 1.2rem;
+      gap: 1rem;
       justify-items: center;
     }
 
     &__item {
       width: 100%;
-      max-width: 20rem;
+      max-width: 14rem;
 
       img {
         border-top-left-radius: 1.2rem;
