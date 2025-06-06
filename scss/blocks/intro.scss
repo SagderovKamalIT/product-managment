@@ -116,7 +116,7 @@
       border-radius: 1rem;
 
       &-title {
-        font-size: 2rem;
+        font-size: 1.7rem;
       }
 
       &-paragraph {
@@ -133,6 +133,10 @@
         font-size: 0.9rem;
         padding: 0.65rem 1rem;
         border-radius: 0.5rem;
+
+        &:hover {
+          opacity: 1;
+        }
       }
     }
   }

@@ -139,11 +139,15 @@ h2 {
   html {
     font-size: 75%;
   }
+
+    h2 {
+  font-size: 1.7rem;
+}
 }
 
 @media (max-width: 330px) {
   html {
     font-size: 70%;
   }
-}
 
+}

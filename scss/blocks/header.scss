@@ -5,6 +5,18 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+
+    &-logo {
+      display: flex;
+      flex-direction: row;
+      gap: 1rem;
+      align-items: center;
+
+      img {
+        width: 7.5rem;
+        height: auto;
+      }
+    }
   }
 
   &__nav {
@@ -26,7 +38,7 @@
     &__container {
       &-link {
         img {
-          width: 7rem;
+          width: 6rem;
           height: auto;
         }
       }
@@ -42,7 +54,7 @@
       align-items: center;
       &-link {
         img {
-          width: 7rem;
+          width: 6.5rem;
           height: auto;
         }
       }

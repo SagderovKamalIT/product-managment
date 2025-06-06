@@ -5,6 +5,19 @@
     display: flex;
     flex-direction: column;
     gap: 2.5rem;
+
+    &-logo {
+      display: flex;
+      flex-direction: row;
+      gap: 1rem;
+      align-items: center;
+
+      img {
+        width: 7rem;
+        height: auto;
+      }
+
+    }
   }
 
   &__nav {

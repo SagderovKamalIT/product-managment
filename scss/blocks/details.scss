@@ -71,6 +71,12 @@
       padding: 2rem 1.5rem;
       gap: 1.2rem;
       max-width: 60vw;
+
+      &-btn {
+           &:hover {
+        opacity: 1;
+      }
+      }
   }
 }
 }

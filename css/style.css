@@ -300,6 +300,9 @@ section {
   html {
     font-size: 75%;
   }
+  h2 {
+    font-size: 1.7rem;
+  }
 }
 @media (max-width: 330px) {
   html {
@@ -313,6 +316,16 @@ section {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+}
+.header__container-logo {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  align-items: center;
+}
+.header__container-logo img {
+  width: 7.5rem;
+  height: auto;
 }
 .header__nav {
   display: flex;
@@ -329,7 +342,7 @@ section {
     padding: 1.5rem 0;
   }
   .header__container-link img {
-    width: 7rem;
+    width: 6rem;
     height: auto;
   }
 }
@@ -341,7 +354,7 @@ section {
     align-items: center;
   }
   .header__container-link img {
-    width: 7rem;
+    width: 6.5rem;
     height: auto;
   }
   .header__nav {
@@ -518,7 +531,7 @@ section {
     border-radius: 1rem;
   }
   .intro__container-title {
-    font-size: 2rem;
+    font-size: 1.7rem;
   }
   .intro__container-paragraph {
     font-size: 0.85rem;
@@ -532,6 +545,9 @@ section {
     font-size: 0.9rem;
     padding: 0.65rem 1rem;
     border-radius: 0.5rem;
+  }
+  .intro__container-button:hover {
+    opacity: 1;
   }
 }
 .whom {
@@ -911,6 +927,9 @@ section {
     font-size: 1rem;
     padding: 1rem 0;
   }
+  .program__text-btn:hover {
+    opacity: 1;
+  }
 }
 .training {
   padding: 2.688rem 0;
@@ -1113,6 +1132,9 @@ section {
     gap: 1.2rem;
     max-width: 60vw;
   }
+  .details__container-btn:hover {
+    opacity: 1;
+  }
 }
 .footer {
   padding: 2.688rem 0;
@@ -1121,6 +1143,16 @@ section {
   display: flex;
   flex-direction: column;
   gap: 2.5rem;
+}
+.footer__container-logo {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  align-items: center;
+}
+.footer__container-logo img {
+  width: 7rem;
+  height: auto;
 }
 .footer__nav {
   display: flex;
