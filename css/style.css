@@ -414,7 +414,7 @@ section {
   }
 }
 .intro-wrap {
-  background: url(/assets/img/rudn-building.jpg) no-repeat;
+  background: url(../assets/img/rudn-building.jpg) no-repeat;
   background-size: contain;
   background-position: bottom 0 right 12vw;
   border-top-right-radius: 2rem;
@@ -498,7 +498,7 @@ section {
     background-position: bottom 0 right 4vw;
     border-top-right-radius: 1rem;
     border-bottom-right-radius: 1rem;
-    background: url(/assets/img/rudn-building-mobile.jpg) no-repeat;
+    background: url(../assets/img/rudn-building-mobile.jpg) no-repeat;
     background-size: contain;
     background-position: bottom 0 right 5vw;
   }
@@ -931,7 +931,7 @@ section {
   padding: 2.688rem 0;
 }
 .documents .documents-wrap {
-  background: url(/assets/img/documents.png) no-repeat;
+  background: url(../assets/img/documents.png) no-repeat;
   background-size: contain;
   background-position: bottom 0 right 12vw;
 }
@@ -1069,7 +1069,7 @@ section {
   padding: 2.688rem 0;
 }
 .details-wrap {
-  background: url(/assets/img/about-program.png) no-repeat;
+  background: url(../assets/img/about-program.png) no-repeat;
   background-size: contain;
   background-position: bottom 0 right 12vw;
 }
@@ -1238,7 +1238,7 @@ section {
   position: fixed;
   top: 1.5rem;
   right: 1.5rem;
-  background-image: url(/assets/icons/burger-close-btn.svg);
+  background-image: url(../assets/icons/burger-close-btn.svg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
