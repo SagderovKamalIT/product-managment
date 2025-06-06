@@ -296,7 +296,7 @@ section {
     padding: 0 0.8rem;
   }
 }
-@media (max-width: 390px) {
+@media (max-width: 420px) {
   html {
     font-size: 75%;
   }
