@@ -1,0 +1,48 @@
+.aplication {
+     padding: 2.688rem 0;
+
+     &__container {
+      padding: 0 2.813rem;
+      display: flex;
+      flex-direction: column;
+      gap: 1.5rem;
+
+      h2 {
+        width: 60%;
+      }
+
+
+      &-btn {
+        @include btn ($woosmoke, $white, 1.5rem, 1.5rem, 2rem, 1.5rem, 2rem, 1rem);
+        font-family: inherit;
+        width: 60%;
+        text-align: center;
+        cursor: pointer;
+
+         &:hover {
+        opacity: 0.8;
+      }
+      }
+     }
+}
+
+
+@media (max-width: 960px) {
+  .aplication {
+    padding: 2rem 0;
+
+    &__container {
+      padding: 0 1.5rem;
+      gap: 1.2rem;
+
+      h2 {
+        font-size: 2rem; 
+      }
+
+      &-btn {
+        font-size: 1rem; 
+        padding: 1.2rem 1rem; 
+      }
+    }
+  }
+}

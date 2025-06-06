@@ -1,0 +1,138 @@
+.program {
+    padding: 2.688rem 0;
+
+    &__container {
+    padding: 0 2.813rem;
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+
+
+    &-img {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(12.5rem, 1fr));
+    gap: 1rem;
+    align-items: stretch;
+
+    img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    border: 0.063rem solid grey;
+    border-radius: 1.4rem;
+    }
+    }
+    
+    }
+
+    &__text {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+
+      &-container {
+        display: flex;
+        flex-direction: column;
+        gap: 1.3rem;
+      }
+
+      &-btn {
+        @include btn ($woosmoke, $white, 1.5rem, 1.2rem, 1.2rem, 1.2rem, 1.2rem, 1rem);
+        align-self: baseline;
+        font-family: inherit;
+
+         &:hover {
+        opacity: 0.8;
+      }
+      }
+    }
+}
+
+@media (max-width: 960px) {
+  .program {
+    &__container {
+      padding: 0 1.5rem;
+      gap: 2rem;
+
+      &-img {
+        grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
+        gap: 0.75rem;
+
+        img {
+          border-radius: 1rem;
+          height: auto; 
+        }
+      }
+    }
+
+    &__text {
+      flex-direction: column;
+      gap: 1.5rem;
+
+      &-container {
+        gap: 1rem;
+      }
+
+      &-btn {
+        align-self: stretch; 
+        text-align: center;
+        font-size: 1rem; 
+        padding: 1rem 0;
+      }
+    }
+  }
+}
+
+@media (max-width: 560px) {
+  .program {
+    padding: 1rem 0;
+    &__container {
+      padding: 0 1rem;
+
+      &-img {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 0.75rem;
+        margin-bottom: 1.5rem;
+
+        > *:nth-child(1) {
+          grid-column: 1;
+        }
+
+        > *:nth-child(2) {
+          grid-column: 2;
+        }
+
+        > *:last-child {
+          grid-column: 1 / span 2;
+          justify-self: center;
+          max-width: 20rem;
+          width: 100%;
+        }
+
+        img {
+          border-radius: 1rem;
+          height: auto;
+          width: 100%;
+          object-fit: cover;
+        }
+      }
+    }
+
+    &__text {
+      flex-direction: column;
+      gap: 1.5rem;
+
+      &-container {
+        gap: 1rem;
+      }
+
+      &-btn {
+        align-self: stretch;
+        text-align: center;
+        font-size: 1rem;
+        padding: 1rem 0;
+      }
+    }
+  }
+}

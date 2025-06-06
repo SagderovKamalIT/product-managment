@@ -1,0 +1,141 @@
+.intro {
+  &-wrap {
+  background: url(/assets/img/rudn-building.jpg) no-repeat;
+  background-size: contain;
+  background-position: bottom 0 right 12vw;
+  border-top-right-radius: 2rem;
+  border-bottom-right-radius: 2rem;
+  
+  
+  }
+
+  &__container {
+    padding: 2.688rem 2.813rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem ;
+    background: $white;
+     overflow-wrap: break-word;
+  word-break: break-word;
+    width: 100%;
+    max-width: min(45rem, 50vw);
+    border-radius: 2rem;
+    border: 1px solid grey;
+
+    &-link {
+      text-decoration: none;
+      padding: 0.7rem;
+      background: $lavender-mist;
+      color: $cyan-blue;
+      width: fit-content;
+      border-radius: 40rem;
+      font-weight: 600;
+      display: inline-block;
+    }
+
+    &-title {
+      font-size: 2.8rem;
+    }
+
+    &-paragraph {
+      font-size: 1rem;
+      line-height: 1.4rem;
+    }
+
+    &-button {
+      padding: 0.9rem;
+      background: $woosmoke;
+      color: $white;
+      width: fit-content;
+      font-size: 1.2rem;
+      border-radius: 0.7rem;
+      cursor: pointer;
+
+       &:hover {
+        opacity: 0.8;
+      }
+
+    }
+
+  }
+}
+
+
+@media (max-width: 960px) {
+  .intro {
+    &-wrap {
+      background-size: contain;
+      background-position: bottom 0 right 8vw; 
+      border-top-right-radius: 1.5rem;
+      border-bottom-right-radius: 1.5rem;
+    }
+
+    &__container {
+      padding: 2rem 1.8rem;
+      max-width: min(42rem, 50vw); 
+      border-radius: 1.5rem;
+
+      &-title {
+        font-size: 2.2rem;
+      }
+
+      &-paragraph {
+        font-size: 0.95rem;
+        line-height: 1.3rem;
+      }
+
+      &-link {
+        font-size: 0.95rem;
+        padding: 0.6rem 1.2rem;
+      }
+
+      &-button {
+        font-size: 1rem;
+        padding: 0.75rem 1.3rem;
+        border-radius: 0.6rem;
+      }
+    }
+  }
+}
+
+@media (max-width: 560px) {
+  .intro {
+    &-wrap {
+      background-size: contain;
+      background-position: bottom 0 right 4vw;
+      border-top-right-radius: 1rem;
+      border-bottom-right-radius: 1rem;
+      background: url(../../assets/img/rudn-building-mobile.jpg) no-repeat;
+      background-size: contain;
+      background-position: bottom 0 right 5vw;
+    }
+
+    &__container {
+      padding: 1.5rem 1.2rem;
+      max-width: 55vw;
+      border-radius: 1rem;
+
+      &-title {
+        font-size: 2rem;
+      }
+
+      &-paragraph {
+        font-size: 0.85rem;
+        line-height: 1.2rem;
+      }
+
+      &-link {
+        font-size: 0.85rem;
+        padding: 0.5rem 1rem;
+      }
+
+      &-button {
+        font-size: 0.9rem;
+        padding: 0.65rem 1rem;
+        border-radius: 0.5rem;
+      }
+    }
+  }
+}
+
+

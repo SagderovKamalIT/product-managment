@@ -1,0 +1,29 @@
+.training {
+   padding: 2.688rem 0;
+
+   &__container {
+    padding: 0 2.813rem;
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+   }
+}
+
+@media (max-width: 960px) {
+  .training {
+    &__container {
+      padding: 0 1.5rem;  
+      gap: 2rem;          
+    }
+  }
+}
+
+@media (max-width: 560px) {
+  .training {
+    padding: 0;
+    &__container {
+      padding: 0 1rem;  
+      gap: 1.5rem;     
+  }
+}
+}

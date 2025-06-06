@@ -1,0 +1,67 @@
+.details {
+    padding: 2.688rem 0;
+
+    &-wrap {
+      background: url(../../assets/img/about-program.png) no-repeat;
+    background-size: contain;
+    background-position: bottom 0 right 12vw;
+    }
+
+    &__container {
+    padding: 2.688rem 2.813rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    background: #FFFFFF;
+    overflow-wrap: break-word;
+    word-break: break-word;
+    max-width: 49vw;
+    border-radius: 2rem;
+    border: 1px solid grey;
+
+    &-btn {
+      @include btn ($woosmoke, $white, 1.3rem, 1rem, 1rem, 1rem, 1rem, 1rem);
+      font-family: inherit;
+      width: 36%;
+      text-align: center;
+
+       &:hover {
+        opacity: 0.8;
+      }
+    }
+    }
+}
+
+@media (max-width: 960px) {
+  .details {
+    padding: 2rem 0;
+
+    &-wrap {
+      background-size: contain;
+      background-position: bottom right 12vw;
+    }
+
+    &__container {
+      padding: 2rem 1.5rem;
+      gap: 1.2rem;
+      max-width: 55vw;
+
+      &-btn {
+        width: 60%; 
+        font-size: 1rem;
+        padding: 0.9rem 1rem; 
+      }
+    }
+  }
+}
+
+@media(max-width:560px) {
+  .details {
+    padding: 0;
+
+    &-wrap {
+      background-size: contain;
+      background-position: bottom right 6vw;
+    }
+  }
+}

@@ -1,0 +1,169 @@
+.demand {
+  padding: 2.688rem 0;
+
+  &__container {
+    padding: 0 2.813rem;
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+
+  
+  }
+
+  &__text {
+      display: grid;
+      grid-template-columns: minmax(12.5rem, 50%) minmax(12.5rem, 50%);
+      gap: 1.5rem;
+      align-items: center;
+
+      img {
+        object-fit: contain;
+        width: 100%;
+        height: auto;
+      }
+    }
+
+     &__list {
+           display: flex;
+           flex-direction: column;
+           gap: 0.7rem;
+
+
+           &-item {
+            padding: 1.4rem 0.8rem;
+            display: flex;
+            flex-direction: column;
+            gap: 1.6rem;
+            border: 0.063rem solid gray;
+            border-radius: 1rem;
+            flex-grow: 1;
+
+            h3 {
+              font-size: 1.7rem;
+              font-weight: 700;
+            }
+
+            &-container {
+              display: flex;
+              flex-direction: column;
+              gap: 0.4rem;
+
+              h4 {
+                font-size: 2rem;
+                font-weight: 700;
+              }
+
+              p {
+                font-size: 1rem;
+              }
+            }
+           }
+      }
+  }
+
+
+  @media (max-width: 960px) {
+  .demand {
+    padding: 1.5rem 0;
+
+    &__container {
+      padding: 0 1.5rem;
+      gap: 2rem;
+
+    h2 {
+      text-align: center;
+      font-size: 2.2rem;
+    }
+    }
+
+    &__text {
+      grid-template-columns: 1fr; 
+      gap: 1rem;
+
+      img {
+        width: 80%; 
+        margin: 0 auto; 
+        object-fit: contain;
+        height: auto;
+      }
+    }
+
+    &__list {
+      gap: 1rem;
+
+      &-item {
+        padding: 1rem 0.6rem;
+        gap: 1rem;
+
+        h3 {
+          font-size: 1.4rem;
+        }
+
+        &-container {
+          gap: 0.3rem;
+
+          h4 {
+            font-size: 1.5rem;
+          }
+
+          p {
+            font-size: 0.9rem;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 560px) {
+  .demand {
+    padding: 1rem 0;
+
+    &__container {
+      padding: 0 1rem;
+      gap: 1.5rem;
+
+      h2 {
+        font-size: 2rem;
+        text-align: center;
+      }
+    }
+
+    &__text {
+      grid-template-columns: 1fr;  // одна колонка
+      gap: 0.8rem;
+
+      img {
+        width: 90%;
+        margin: 0 auto;
+        object-fit: contain;
+        height: auto;
+      }
+    }
+
+    &__list {
+      gap: 0.8rem;
+
+      &-item {
+        padding: 0.8rem 0.5rem;
+        gap: 0.8rem;
+
+        h3 {
+          font-size: 1.2rem;
+        }
+
+        &-container {
+          gap: 0.2rem;
+
+          h4 {
+            font-size: 1.3rem;
+          }
+
+          p {
+            font-size: 0.85rem;
+          }
+        }
+      }
+    }
+  }
+}
