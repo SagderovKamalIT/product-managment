@@ -1009,7 +1009,7 @@ section {
   padding: 2.688rem 0;
 }
 .admission__container {
-  padding: 0 2.813rem;
+  padding: 0 4.813rem;
   display: flex;
   flex-direction: column;
   gap: 2rem;
@@ -1094,7 +1094,7 @@ section {
   background: #FFFFFF;
   overflow-wrap: break-word;
   word-break: break-word;
-  max-width: 49vw;
+  max-width: 45vw;
   border-radius: 2rem;
   border: 1px solid grey;
 }
