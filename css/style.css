@@ -1024,7 +1024,12 @@ section {
   flex-direction: row;
   gap: 0.7rem;
 }
-.admission__item img {
+.admission__item-link {
+  height: 21rem;
+  width: auto;
+  flex: 1;
+}
+.admission__item-link img {
   object-fit: cover;
   border: 0.063rem solid grey;
   border-radius: 1.7rem;
@@ -1046,7 +1051,12 @@ section {
     align-items: center;
     gap: 1rem;
   }
-  .admission__item img {
+  .admission__item-link {
+    height: 21rem;
+    width: 100%;
+    max-width: 400px;
+  }
+  .admission__item-link img {
     height: 21rem;
     width: 100%;
     max-width: 400px;

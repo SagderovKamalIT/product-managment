@@ -20,14 +20,21 @@
     flex-direction: row;
     gap: 0.7rem;
 
-    img {
-    object-fit: cover;
-    border: 0.063rem solid grey;
-    border-radius: 1.7rem;
-    height: 21rem;
-    width: auto;
-    flex: 1;
+    &-link {
+         height: 21rem;
+      width: auto;
+            flex: 1;
+      
+      img {
+      object-fit: cover;
+      border: 0.063rem solid grey;
+      border-radius: 1.7rem;
+      height: 21rem;
+      width: auto;
+      flex: 1;
+      }
     }
+
 
     
 
@@ -51,11 +58,18 @@
       align-items: center;
       gap: 1rem;
 
-      img {
-        height: 21rem;
-        width: 100%; 
-        max-width: 400px; 
-      }
+       &-link {
+         height: 21rem;
+         width: 100%; 
+         max-width: 400px; 
+         
+               img {
+                 height: 21rem;
+                 width: 100%; 
+                 max-width: 400px; 
+               }
+
+       }
     }
   }
 }
